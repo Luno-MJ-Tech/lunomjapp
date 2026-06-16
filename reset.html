@@ -1,40 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sw">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUNO — From Fire to Finance</title>
-<meta name="description" content="The motorcycle ownership platform for East Africa. Track payments. Prove ownership. Gain freedom.">
-<meta name="theme-color" content="#050506">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<meta name="robots" content="noindex" />
+<title>LUNO Mwanajando — Weka Nenosiri Jipya</title>
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#050506;--bg2:#0A0A0C;--bg3:#0F0F12;--card:#0C0C0F;--g:#0ECF8A;--g2:#0BF4A0;--gd:#096B48;--gg:rgba(14,207,138,0.08);--gg2:rgba(14,207,138,0.15);--w:#EFEFEF;--ow:#C8C8C8;--gr:#5A5A5A;--gr2:#2A2A2C;--sf:'Instrument Serif',Georgia,serif;--sn:'Outfit',system-ui,sans-serif;--mn:'JetBrains Mono',monospace;--e:cubic-bezier(.16,1,.3,1)}
-html{scroll-behavior:smooth;overflow-x:hidden}body{background:var(--bg);color:var(--w);font-family:var(--sn);-webkit-font-smoothing:antialiased;overflow-x:hidden}::selection{background:var(--g);color:var(--bg)}
-body::after{content:'';position:fixed;inset:0;pointer-events:none;z-index:9998;opacity:.022;background:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 40px;display:flex;align-items:center;justify-content:space-between;transition:all .5s}nav.sc{background:rgba(5,5,6,.88);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-bottom:1px solid rgba(255,255,255,.03);padding:14px 40px}
-.lo{display:flex;align-items:center;gap:10px;text-decoration:none}.lm{width:32px;height:32px;background:var(--g);border-radius:9px;display:grid;place-items:center;font:800 18px/1 var(--sn);color:var(--bg);transition:transform .3s var(--e)}.lo:hover .lm{transform:rotate(-8deg) scale(1.05)}.lt{font:700 15px/1 var(--sn);color:var(--w);letter-spacing:5px}
-.nr{display:flex;align-items:center;gap:24px}.na{font:400 13px/1 var(--sn);color:var(--gr);text-decoration:none;transition:color .3s;position:relative}.na::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1px;background:var(--g);transition:width .3s var(--e)}.na:hover{color:var(--w)}.na:hover::after{width:100%}
-.nb{font:600 12px/1 var(--sn);color:var(--bg);background:var(--g);padding:10px 22px;border-radius:100px;text-decoration:none;letter-spacing:1px;text-transform:uppercase;transition:all .3s var(--e)}.nb:hover{background:var(--w);transform:translateY(-1px)}
-.ls{font:500 11px/1 var(--mn);color:var(--gr);cursor:pointer;padding:6px 12px;border:1px solid var(--gr2);border-radius:6px;background:none;transition:all .3s}.ls:hover{border-color:var(--g);color:var(--g)}
-.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 40px 80px;position:relative}
-.hbg{position:absolute;inset:0;overflow:hidden}.horb{position:absolute;border-radius:50%;filter:blur(120px);animation:of 20s ease-in-out infinite}.ho1{width:500px;height:500px;background:rgba(14,207,138,.06);top:-100px;right:10%}.ho2{width:300px;height:300px;background:rgba(14,207,138,.04);bottom:20%;left:5%;animation-delay:7s}
-.hgr{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.012) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.012) 1px,transparent 1px);background-size:60px 60px;mask:linear-gradient(to bottom,transparent,black 30%,black 70%,transparent)}
-.hc{position:relative;z-index:2;max-width:1100px}.hey{font:400 12px/1 var(--mn);color:var(--g);letter-spacing:4px;text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:12px;opacity:0;animation:su .8s var(--e) .3s forwards}.hey::before{content:'';width:32px;height:1px;background:var(--g)}
-.hero h1{font:800 clamp(48px,8.5vw,120px)/.88 var(--sn);letter-spacing:-4px;margin-bottom:20px;opacity:0;animation:su 1s var(--e) .5s forwards}.hero h1 em{font-family:var(--sf);font-weight:400;font-style:italic;color:var(--g)}
-.hp{font:300 clamp(15px,1.6vw,20px)/1.7 var(--sn);color:var(--ow);max-width:500px;margin-bottom:36px;opacity:0;animation:su .8s var(--e) .7s forwards}
-.ha{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:su .8s var(--e) .9s forwards}.hb{padding:14px 30px;border-radius:100px;font:600 13px/1 var(--sn);text-decoration:none;letter-spacing:.5px;transition:all .3s var(--e)}.hbf{background:var(--g);color:var(--bg)}.hbf:hover{background:var(--g2);transform:translateY(-2px);box-shadow:0 12px 32px rgba(14,207,138,.25)}.hbg2{border:1px solid var(--gr2);color:var(--ow)}.hbg2:hover{border-color:var(--g);color:var(--g)}
-.mq{padding:28px 0;border-top:1px solid var(--gr2);border-bottom:1px solid var(--gr2);overflow:hidden}.mqt{display:flex;gap:56px;animation:ma 35s linear infinite;width:max-content}.mqi{font:700 clamp(12px,1.5vw,16px)/1 var(--sn);color:var(--gr2);white-space:nowrap;letter-spacing:3px;text-transform:uppercase;display:flex;align-items:center;gap:20px}.mqi .d{width:5px;height:5px;background:var(--g);border-radius:50%}
-.sp{padding:120px 40px}.sl{font:400 11px/1 var(--mn);color:var(--g);letter-spacing:5px;text-transform:uppercase;margin-bottom:20px}.st{font:800 clamp(28px,4.2vw,52px)/1.05 var(--sn);letter-spacing:-2px;max-width:680px;margin-bottom:16px}.st em{font-family:var(--sf);font-weight:400;font-style:italic;color:var(--g)}.sd{font:300 16px/1.7 var(--sn);color:var(--gr);max-width:480px}
-.story-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
-.sv{position:relative;height:420px;display:flex;align-items:center;justify-content:center}.sc2{width:320px;height:320px;border-radius:50%;border:1px solid rgba(14,207,138,.08);display:grid;place-items:center;position:relative}.sc2::before{content:'';position:absolute;inset:30px;border-radius:50%;border:1px solid rgba(14,207,138,.05)}.sc2::after{content:'';position:absolute;inset:60px;border-radius:50%;background:rgba(14,207,138,.03)}.sfl{font-size:72px;animation:fp 3s ease-in-out infinite}
-.stx blockquote{font:300 clamp(18px,2vw,26px)/1.5 var(--sf);font-style:italic;color:var(--ow);margin-bottom:24px;padding-left:24px;border-left:2px solid var(--g)}.stx p{font:300 14px/1.7 var(--sn);color:var(--gr);margin-bottom:14px}.ch{font:500 13px/1.4 var(--mn);color:var(--g);letter-spacing:1px;margin-bottom:20px;opacity:.7}
-.bt2{display:flex;gap:8px;margin-bottom:20px}.bt2 button{font:500 12px/1 var(--mn);padding:6px 16px;border:1px solid var(--gr2);border-radius:6px;background:none;color:var(--gr);cursor:pointer;transition:all .3s}.bt2 button.ac{border-color:var(--g);color:var(--g);background:rgba(14,207,138,.05)}.bic{display:none}.bic.ac{display:block}
-.bn2{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:56px}.bc{background:var(--card);border:1px solid rgba(255,255,255,.03);border-radius:18px;padding:32px;position:relative;overflow:hidden;transition:all .5s var(--e)}.bc:hover{border-color:rgba(14,207,138,.12);transform:translateY(-2px)}.bc::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,var(--gg),transparent 60%);opacity:0;transition:opacity .5s}.bc:hover::after{opacity:1}.b1{grid-column:span 7;grid-row:span 2;padding:44px;display:flex;flex-direction:column;justify-content:space-between}.b2{grid-column:span 5}.b3{grid-column:span 5}.b4{grid-column:span 4}.b5{grid-column:span 4}.b6{grid-column:span 4}
-.bi2{font-size:26px;margin-bottom:14px;position:relative;z-index:1}.btt{font:700 17px/1.2 var(--sn);margin-bottom:6px;position:relative;z-index:1}.bdd{font:300 13px/1.6 var(--sn);color:var(--gr);position:relative;z-index:1}.bnn{font:800 clamp(40px,5vw,64px)/1 var(--sn);color:var(--g);letter-spacing:-2px}.bsl{font:400 11px/1 var(--mn);color:var(--gr);letter-spacing:2px;text-transform:uppercase;margin-top:4px}
-.phs{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.ph{width:250px;background:var(--bg3);border-radius:30px;border:1.5px solid rgba(255,255,255,.05);padding:7px;box-shadow:0 50px 100px rgba(0,0,0,.6);margin:0 auto}.phi{border-radius:25px;overflow:hidden;background:var(--bg);aspect-ratio:9/19.5;position:relative}.phn{position:absolute;top:0;left:50%;transform:translateX(-50%);width:72px;height:20px;background:var(--bg3);border-radius:0 0 12px 12px;z-index:5}
+  :root {
+    --black: #0A0B0D;
+    --card: #15171B;
+    --line: rgba(255,255,255,0.07);
+    --green: #00D26A;
+    --green-dim: rgba(0,210,106,0.12);
+    --white: #FFFFFF;
+    --muted: rgba(255,255,255,0.45);
+    --faint: rgba(255,255,255,0.25);
+    --red: #FF5A5F;
+    --amber: #FFB020;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body { margin: 0; padding: 0; background: var(--black); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--white);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  .wrap { width: 100%; max-width: 400px; }
+  .brand { text-align: center; margin-bottom: 28px; }
+  .brand .mark {
+    font-size: 26px; font-weight: 900; letter-spacing: 6px; color: var(--green);
+  }
+  .brand .sub {
+    font-size: 11px; letter-spacing: 3px; color: var(--faint);
+    text-transform: uppercase; margin-top: 4px;
+  }
+  .card {
+    background: var(--card);
+    border: 0.5px solid var(--line);
+    border-radius: 20px;
+    padding: 28px 24px;
+  }
+  h1 { font-size: 20px; font-weight: 800; margin: 0 0 6px; }
+  .lead { font-size: 13px; color: var(--muted); line-height: 19px; margin: 0 0 22px; }
+  label { display: block; font-size: 11px; font-weight: 700; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--faint); margin: 0 0 8px; }
+  input {
+    width: 100%; padding: 14px 16px; font-size: 16px;
+    background: #0E1013; color: var(--white);
+    border: 1px solid var(--line); border-radius: 12px; outline: none;
+  }
+  input:focus { border-color: var(--green); }
+  .field { margin-bottom: 16px; }
+  button {
+    width: 100%; padding: 16px; font-size: 14px; font-weight: 800;
+    letter-spacing: 1px; color: var(--black); background: var(--green);
+    border: none; border-radius: 14px; cursor: pointer; margin-top: 6px;
+  }
+  button:disabled { opacity: 0.5; cursor: default; }
+  .hint { font-size: 11px; color: var(--faint); margin-top: 10px; text-align: center; }
+  .en { color: var(--faint); font-weight: 400; }
+  .icon {
+    width: 56px; height: 56px; border-radius: 16px; margin: 0 auto 18px;
+    display: flex; align-items: center; justify-content: center; font-size: 28px;
+  }
+  .icon.ok { background: var(--green-dim); }
+  .icon.err { background: rgba(255,90,95,0.12); }
+  .center { text-align: center; }
+  .msg { font-size: 13px; color: var(--muted); line-height: 20px; margin: 0 0 8px; }
+  .err-text { color: var(--red); font-size: 13px; margin-top: 12px; min-height: 18px; }
+  .hidden { display: none; }
+  .spinner {
+    width: 22px; height: 22px; border: 2px solid var(--line);
+    border-top-color: var(--green); border-radius: 50%;
+    margin: 30px auto; animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <div class="mark">LUNO</div>
+      <div class="sub">Mwanajando</div>
+    </div>
+    <div class="card">
+
+      <!-- LOADING -->
+      <div id="loading">
+        <div class="spinner"></div>
+        <p class="msg center">Inapakia... <span class="en">Loading...</span></p>
+      </div>
+
+      <!-- RESET FORM -->
+      <div id="resetForm" class="hidden">
+        <h1>Weka nenosiri jipya</h1>
+        <p class="lead">Set a new password for your LUNO account. Andika nenosiri jipya hapa chini.</p>
+        <div class="field">
+          <label>Nenosiri jipya · New password</label>
+          <input id="pw1" type="password" autocomplete="new-password" placeholder="••••••••" />
+        </div>
+        <div class="field">
+          <label>Thibitisha · Confirm password</label>
+          <input id="pw2" type="password" autocomplete="new-password" placeholder="••••••••" />
+        </div>
+        <button id="submitBtn">HIFADHI NENOSIRI · SAVE</button>
+        <div class="err-text" id="formErr"></div>
+        <p class="hint">Lazima iwe herufi 6 au zaidi · Minimum 6 characters</p>
+      </div>
+
+      <!-- SUCCESS -->
+      <div id="success" class="hidden center">
+        <div class="icon ok">✅</div>
+        <h1>Nenosiri limebadilishwa!</h1>
+        <p class="msg">Password updated successfully.<br>Fungua app ya LUNO na uingie kwa nenosiri lako jipya.</p>
+        <p class="hint">Open the LUNO app and log in with your new password.</p>
+      </div>
+
+      <!-- CONFIRMED (signup) -->
+      <div id="confirmed" class="hidden center">
+        <div class="icon ok">✅</div>
+        <h1>Akaunti imethibitishwa!</h1>
+        <p class="msg">Your email is confirmed.<br>Fungua app ya LUNO na uingie.</p>
+        <p class="hint">Open the LUNO app and log in.</p>
+      </div>
+
+      <!-- ERROR -->
+      <div id="error" class="hidden center">
+        <div class="icon err">⚠️</div>
+        <h1>Kiungo kimeisha muda</h1>
+        <p class="msg" id="errMsg">This link is invalid or has expired.<br>Omba kiungo kipya kupitia app ya LUNO.</p>
+        <p class="hint">Request a new reset link from the LUNO app.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // ─────────────────────────────────────────────────────────
+    //  LUNO Mwanajando — Supabase config
+    //  Project: "Luno MJ"
+    //  ⚠️ PASTE YOUR ANON (public) KEY BELOW — Supabase dashboard →
+    //     Project Settings → API → Project API keys → "anon public".
+    //     This key is safe to publish; it is the public client key.
+    // ─────────────────────────────────────────────────────────
+    const SUPABASE_URL = "https://nwwblduplnwhixvvatit.supabase.co";
+    const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im53d2JsZHVwbG53aGl4dnZhdGl0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzg2MDAxMTksImV4cCI6MjA5NDE3NjExOX0.1F7Zxa_QV27-7D8sY8DKKsE9O6mV0Sj_P4L2rer52i8";
+
+    const { createClient } = supabase;
+    const client = createClient(SUPABASE_URL, SUPABASE_ANON_KEY, {
+      auth: { detectSessionInUrl: true, flowType: "implicit", persistSession: false }
+    });
+
+    function show(id) {
+      ["loading", "resetForm", "success", "confirmed", "error"].forEach(function (s) {
+        document.getElementById(s).classList.toggle("hidden", s !== id);
+      });
+    }
+
+    function showError(text) {
+      if (text) document.getElementById("errMsg").innerHTML = text;
+      show("error");
+    }
+
+    // Parse the URL fragment Supabase appends (#access_token=...&type=recovery)
+    var hash = new URLSearchParams(window.location.hash.replace(/^#/, ""));
+    var linkType = hash.get("type");
+    var linkErr = hash.get("error_description") || hash.get("error");
+
+    if (linkErr) {
+      showError(linkErr.replace(/\+/g, " ") + "<br>Omba kiungo kipya.");
+    }
+
+    // Recovery session arrives → reveal the form
+    client.auth.onAuthStateChange(function (event) {
+      if (event === "PASSWORD_RECOVERY") {
+        show("resetForm");
+      } else if (event === "SIGNED_IN" && linkType === "signup") {
+        show("confirmed");
+      }
+    });
+
+    // Fallback in case the event fired before the listener attached
+    if (linkType === "recovery") {
+      setTimeout(function () {
+        if (!document.getElementById("error").classList.contains("hidden")) return;
+        show("resetForm");
+      }, 600);
+    } else if (linkType === "signup") {
+      setTimeout(function () { show("confirmed"); }, 800);
+    } else if (!linkErr) {
+      // No recognizable token in the URL
+      setTimeout(function () {
+        client.auth.getSession().then(function (res) {
+          if (res.data.session) { show("resetForm"); }
+          else { showError("Kiungo si sahihi.<br>This link is invalid or has expired."); }
+        });
+      }, 800);
+    }
+
+    // Submit handler
+    document.getElementById("submitBtn").addEventListener("click", async function () {
+      var btn = this;
+      var pw1 = document.getElementById("pw1").value;
+      var pw2 = document.getElementById("pw2").value;
+      var errBox = document.getElementById("formErr");
+      errBox.textContent = "";
+
+      if (pw1.length < 6) { errBox.textContent = "Nenosiri ni fupi sana (herufi 6+). Too short."; return; }
+      if (pw1 !== pw2) { errBox.textContent = "Manenosiri hayafanani. Passwords don't match."; return; }
+
+      btn.disabled = true;
+      btn.textContent = "INAHIFADHI... · SAVING...";
+      try {
+        var result = await client.auth.updateUser({ password: pw1 });
+        if (result.error) {
+          errBox.textContent = result.error.message;
+          btn.disabled = false;
+          btn.textContent = "HIFADHI NENOSIRI · SAVE";
+        } else {
+          show("success");
+        }
+      } catch (e) {
+        errBox.textContent = (e && e.message) ? e.message : "Hitilafu. Try again.";
+        btn.disabled = false;
+        btn.textContent = "HIFADHI NENOSIRI · SAVE";
+      }
+    });
+  </script>
+</body>
+</html>.phs{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}.ph{width:250px;background:var(--bg3);border-radius:30px;border:1.5px solid rgba(255,255,255,.05);padding:7px;box-shadow:0 50px 100px rgba(0,0,0,.6);margin:0 auto}.phi{border-radius:25px;overflow:hidden;background:var(--bg);aspect-ratio:9/19.5;position:relative}.phn{position:absolute;top:0;left:50%;transform:translateX(-50%);width:72px;height:20px;background:var(--bg3);border-radius:0 0 12px 12px;z-index:5}
 .pi{padding:32px 14px 10px;display:flex;flex-direction:column;gap:6px;height:100%}.pih{display:flex;justify-content:space-between;align-items:center}.pil{font:400 6px/1 var(--mn);color:var(--g);letter-spacing:2px;text-transform:uppercase}.pip{font:800 11px/1 var(--sn);color:var(--w)}.pisw{font:600 6px/1 var(--sn);color:var(--g);background:rgba(14,207,138,.1);padding:2px 6px;border-radius:4px}
 .pir{width:88px;height:88px;margin:6px auto;border-radius:50%;border:4px solid var(--g);display:grid;place-items:center}.pir::before{content:'';position:absolute;inset:-2px;border-radius:50%;border:4px solid rgba(14,207,138,.07)}.pipc{font:800 18px/1 var(--sn);color:var(--g)}.piwk{font:400 5px/1 var(--mn);color:var(--gr);letter-spacing:1px;margin-top:1px}
 .pic{background:rgba(14,207,138,.04);border:1px solid rgba(14,207,138,.07);border-radius:8px;padding:6px 8px}.pict{font:700 6px/1 var(--sn);color:var(--g);letter-spacing:.5px}.picd{font:300 5.5px/1.3 var(--sn);color:var(--gr);margin-top:1px}.pib{margin-top:auto;background:var(--g);border-radius:7px;padding:7px;text-align:center;font:700 7px/1 var(--sn);color:var(--bg);letter-spacing:.5px}
