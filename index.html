@@ -1,7 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>LUNO — Own your future, one payment at a time | Rent-to-Own Bodaboda & Bajaji</title>
+    <meta name="description" content="LUNO is the vehicle-ownership platform for East Africa's bodaboda and bajaji economy. Track rent-to-own agreements, digitize payments, and secure driver safety in Tanzania. Programu rahisi ya mkataba wa pikipiki bila utata.">
+    <meta name="keywords" content="LUNO, LUNO Mwanajando, bodaboda rent to own, mkataba wa bodaboda, mikopo ya pikipiki, bajaji fleet management, vehicle tracker Tanzania, Dar es Salaam, Arusha, Mwanza">
+    <meta name="author" content="LUNO">
+    <link rel="canonical" href="https://lunomj.com/">
+
+    <!-- Open Graph / Facebook / WhatsApp (Social Media Optimization) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lunomj.com/">
+    <meta property="og:title" content="LUNO — Own your future, one payment at a time">
+    <meta property="og:description" content="Digital proof, real-time progress, and safety for the bodaboda economy. No more lost receipts or notebook chaos. Track your journey to vehicle ownership.">
+    <meta property="og:image" content="https://lunomj.com/images/luno-preview.jpg"> <!-- Ensure this path points to your actual share image -->
+
+    <!-- Twitter / X Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://lunomj.com/">
+    <meta name="twitter:title" content="LUNO — Own your future, one payment at a time">
+    <meta name="twitter:description" content="Replacing tattered notebooks with automated, human-first rent-to-own tracking for Tanzanian fleets and drivers.">
+    <meta name="twitter:image" content="https://lunomj.com/images/luno-preview.jpg">
+
+    <!-- Mobile App Deep-Linking & Smart App Banner (For Google Play Store Discovery) -->
+    <meta name="google-play-app" content="app-id=com.lunomj.driver">
+    <link rel="alternate" href="android-app://com.lunomj.driver/https/lunomj.com/">
+
+    <!-- Structured Data (JSON-LD Organization & Product Schema for Google Search) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "LUNO",
+      "url": "https://lunomj.com/",
+      "logo": "https://lunomj.com/images/luno-logo.png",
+      "description": "The vehicle-ownership platform for East Africa's bodaboda and bajaji economy, offering digital tracking for rent-to-own agreements.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Dar es Salaam",
+        "addressRegion": "Dar es Salaam",
+        "addressCountry": "TZ"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@lunomj.com",
+        "telephone": "+255785431978",
+        "contactType": "customer support"
+      },
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.lunomj.driver"
+      ]
+    }
+    </script>
+
+    <!-- Performance Optimization: Pre-connecting to essential Google Play or styling assets -->
+    <link rel="preconnect" href="https://play.google.com">
+
+    
+<!--meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LUNO — Own your future, one payment at a time</title>
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
@@ -13,7 +74,8 @@
 <meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"-->
+
 <style>
   :root{
     --ink:#060A09; --ink-2:#0A100E; --panel:#0D1512; --card:#101A16; --card-2:#15211C;
