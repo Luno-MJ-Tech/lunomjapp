@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Makala — Elimu ya Umiliki wa Bodaboda na Bajaji | LUNO Mwanajando</title>
+<meta name="description" content="Makala za bure kwa Kiswahili kuhusu umiliki wa bodaboda na bajaji Tanzania — mikataba, haki zako, hesabu za marejesho, na usalama wa dereva. Kutoka LUNO Mwanajando.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://lunomj.com/makala.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUNO Mwanajando">
+<meta property="og:title" content="Makala — Elimu ya Umiliki | LUNO Mwanajando">
+<meta property="og:description" content="Makala za bure kwa Kiswahili: mikataba ya bodaboda, haki zako, hesabu za marejesho, na usalama wa dereva.">
+<meta property="og:url" content="https://lunomj.com/makala.html">
+<meta property="og:image" content="https://lunomj.com/luno-preview.jpg">
+<meta property="og:locale" content="sw_TZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@lunomwanajando">
+<meta name="theme-color" content="#060A09">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "name": "Makala — Elimu ya Umiliki",
+  "url": "https://lunomj.com/makala.html",
+  "inLanguage": "sw",
+  "publisher": {"@type": "Organization", "name": "LUNO Mwanajando", "logo": {"@type": "ImageObject", "url": "https://lunomj.com/luno-logo.png"}},
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "url": "https://lunomj.com/mkataba-wa-bodaboda.html", "name": "Mkataba wa Bodaboda: Haki Zako ni Zipi?"}
+    ]
+  }
+}
+</script>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--ink:#060A09;--card:#101A16;--card2:#15211C;--line:#1F2D27;--green:#1DD882;--mint:#7BF5C4;--amber:#F4B740;--white:#F4FBF8;--mute:#94AC9F;--mute2:#5E726A;--serif:'Fraunces',Georgia,serif;--sans:'Manrope',system-ui,sans-serif}
+body{background:var(--ink);color:var(--white);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.top{border-bottom:1px solid var(--line);padding:16px 20px;display:flex;justify-content:space-between;align-items:center}
+.top .brand{font-weight:800;font-size:17px;letter-spacing:.05em}
+.top .brand span{color:var(--green)}
+.top .dl{font-size:13px;font-weight:600;background:var(--green);color:var(--ink);padding:8px 16px;border-radius:100px}
+main{max-width:760px;margin:0 auto;padding:60px 22px 80px}
+.kicker{font-size:12px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--green);margin-bottom:16px}
+h1{font-family:var(--serif);font-weight:600;font-size:clamp(32px,6vw,48px);line-height:1.1;margin-bottom:14px}
+h1 em{font-style:italic;color:var(--green)}
+.lead{color:var(--mute);font-size:17px;max-width:56ch;margin-bottom:44px}
+.card{display:block;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 28px;margin-bottom:16px;transition:border-color .3s,transform .3s}
+.card:hover{border-color:var(--green);transform:translateY(-3px)}
+.card .date{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:8px}
+.card h2{font-family:var(--serif);font-weight:600;font-size:23px;line-height:1.25;margin-bottom:8px}
+.card p{color:var(--mute);font-size:15px}
+.card .read{display:inline-block;margin-top:14px;color:var(--mint);font-weight:600;font-size:14px}
+.soonh{font-family:var(--serif);font-weight:600;font-size:24px;margin:52px 0 18px}
+.soonh em{font-style:italic;color:var(--amber)}
+.soon{border:1px dashed var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+.soon .t{font-weight:600;font-size:16px}
+.soon .m{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute2);font-weight:700}
+.cta{background:linear-gradient(150deg,#0E1B15,#0A120F);border:1px solid var(--line);border-radius:18px;padding:28px 26px;margin-top:52px;text-align:center}
+.cta h3{font-family:var(--serif);font-size:22px;font-weight:600;margin-bottom:8px}
+.cta p{font-size:14.5px;color:var(--mute);margin-bottom:16px}
+.cta a{display:inline-block;background:var(--green);color:var(--ink);font-weight:700;font-size:14px;padding:12px 24px;border-radius:100px}
+footer{border-top:1px solid var(--line);padding:26px 20px;text-align:center;font-size:12.5px;color:var(--mute)}
+footer a{color:var(--mute);margin:0 8px}
+</style>
+</head>
+<body>
+
+<div class="top">
+  <a href="https://lunomj.com/" class="brand">LUNO<span>.</span></a>
+  <a href="https://play.google.com/store/apps/details?id=com.lunomj.driver" class="dl">Pakua App — Bure</a>
+</div>
+
+<main>
+  <div class="kicker">Makala &amp; Rasilimali</div>
+  <h1>Elimu ya <em>umiliki,</em> kwa Kiswahili rahisi.</h1>
+  <p class="lead">Kila mwezi tunachapisha makala moja kuhusu maisha halisi ya bodaboda na bajaji Tanzania — mikataba, haki zako, hesabu za marejesho, na usalama barabarani. Bure, bila usajili.</p>
+
+  <a class="card" href="mkataba-wa-bodaboda.html">
+    <div class="date">Julai 2026</div>
+    <h2>Mkataba wa Bodaboda: Haki Zako ni Zipi?</h2>
+    <p>Vipengele 6 ambavyo kila mkataba wa kulipia-mpaka-umiliki unapaswa kuwa navyo, haki za dereva na za mmiliki, na jinsi ya kulinda malipo yako kuanzia leo.</p>
+    <span class="read">Soma makala →</span>
+  </a>
+
+  <div class="soonh">Zinakuja <em>hivi karibuni</em></div>
+  <div class="soon"><span class="t">Jinsi ya Kumiliki Bodaboda kwa Kulipia Kidogo Kidogo</span><span class="m">Agosti</span></div>
+  <div class="soon"><span class="t">Hesabu ya Marejesho: Bajaji Inalipa Baada ya Muda Gani?</span><span class="m">Septemba</span></div>
+  <div class="soon"><span class="t">Daftari dhidi ya App: Kwa Nini Wamiliki Wanahamia Kidijitali</span><span class="m">Oktoba</span></div>
+  <div class="soon"><span class="t">Usalama wa Dereva wa Bodaboda: Hatua za Kujilinda Barabarani</span><span class="m">Novemba</span></div>
+
+  <div class="cta">
+    <h3>Usisubiri makala — anza safari yako leo</h3>
+    <p>LUNO inarekodi kila malipo, inaonyesha maendeleo ya umiliki, na inakupa tarehe yako ya uhuru. Bure kabisa.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.lunomj.driver">Pakua kwenye Google Play</a>
+  </div>
+</main>
+
+<footer>
+  <a href="https://lunomj.com/">Nyumbani</a> · <a href="lmt.html">Huduma za LMT</a> · <a href="luno-privacy-policy.html">Privacy</a><br><br>
+  LUNO Mwanajando Technologies Co. Limited · Dar es Salaam, Tanzania
+</footer>
+
+</body>
+</html>
