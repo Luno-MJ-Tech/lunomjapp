@@ -125,7 +125,7 @@
             {
               "@type": "Question",
               "name": "Is LUNO free for drivers?",
-              "acceptedAnswer": {"@type": "Answer", "text": "Yes. Drivers never pay to use LUNO. The owner covers a small platform fee — the driver gets safety, proof of every payment, and a clear path to owning their bike, at no cost."}
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes — and right now it is free for owners too. Drivers never pay to use LUNO, and owners currently pay nothing to record contracts and payments."}
             },
             {
               "@type": "Question",
@@ -699,8 +699,8 @@
         <div class="calc-field">
           <label>Vehicle type</label>
           <div class="seg" id="segType">
-            <button class="on" data-price="2300000" data-weeks="78" data-cursor>Bodaboda</button>
-            <button data-price="5200000" data-weeks="104" data-cursor>Bajaji</button>
+            <button class="on" data-price="2400000" data-weeks="78" data-cursor>Bodaboda</button>
+            <button data-price="9700000" data-weeks="104" data-cursor>Bajaji</button>
           </div>
         </div>
         <div class="calc-field">
@@ -710,7 +710,7 @@
         </div>
         <div class="calc-field" style="margin-bottom:0">
           <label>Vehicle price <b id="priceVal">2.3M TZS</b></label>
-          <p style="font-size:13.5px;color:var(--mute-2);line-height:1.6;margin-top:6px">A typical bodaboda runs ~2.3M; a bajaji ~5.2M. LUNO splits it into weekly payments you already make &mdash; but now they build toward something that&rsquo;s yours.</p>
+          <p style="font-size:13.5px;color:var(--mute-2);line-height:1.6;margin-top:6px">A typical bodaboda runs ~2.4&ndash;2.8M; a bajaji ~9.7&ndash;13M. LUNO splits it into weekly payments you already make &mdash; but now they build toward something that&rsquo;s yours.</p>
         </div>
       </div>
       <div class="calc-result">
@@ -762,7 +762,7 @@
   <div class="wrap">
     <div class="reveal"><span class="sec-eyebrow">Questions</span><h2 class="sec-title">Everything you might <span class="it">ask.</span></h2></div>
     <div class="faq reveal">
-      <div class="faq-item"><button class="faq-q" data-cursor>Is LUNO free for drivers?</button><div class="faq-a"><p>Yes. Drivers never pay to use LUNO. The owner covers a small platform fee &mdash; the driver gets safety, proof of every payment, and a clear path to owning their bike, at no cost.</p></div></div>
+      <div class="faq-item"><button class="faq-q" data-cursor>Is LUNO free for drivers?</button><div class="faq-a"><p>Yes &mdash; and right now it is free for owners too. Drivers never pay to use LUNO, and owners currently pay nothing to record contracts and payments.</p></div></div>
       <div class="faq-item"><button class="faq-q" data-cursor>Does it work without internet?</button><div class="faq-a"><p>LUNO is offline-first. Payments and records are saved on the phone and sync automatically once a connection returns &mdash; built for real conditions on low-end Android devices.</p></div></div>
       <div class="faq-item"><button class="faq-q" data-cursor>Is LUNO on iPhone?</button><div class="faq-a"><p>Yes &mdash; LUNO is live on the Apple App Store. Download it free at <a href="https://apps.apple.com/app/luno-mwanajando/id6782275114" target="_blank" rel="noopener" style="color:var(--green);border-bottom:1px solid var(--green-d)" data-cursor>the App Store</a>. Android users can download directly from Google Play.</p></div></div>
       <div class="faq-item"><button class="faq-q" data-cursor>How will the SOS feature work?</button><div class="faq-a"><p>SOS is the safety feature we are building next. A hold-to-fire button will send the driver&rsquo;s live GPS location to their owner and next-of-kin instantly &mdash; a lifeline for the driver, never a remote kill-switch on the vehicle.</p></div></div>
@@ -881,7 +881,7 @@
   document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3*0.08)+'s';io.observe(el)});
 
   // trust marquee
-  const items=[['M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z','SOS safety','coming soon'],['M4 19V5M4 19h16M8 16l3-4 3 2 4-7','Real-time','Payment tracking'],['M3 21h18M5 21V10l7-5 7 5v11','Path to','Ownership'],['M12 2 2 7v10l10 5 10-5V7L12 2z','PDPA','Compliant'],['M2 12h20M12 2c3 3 3 17 0 20M12 2C9 5 9 19 12 22','Built for','East Africa'],['M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6','Owner pays,','driver free']];
+  const items=[['M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z','SOS safety','coming soon'],['M4 19V5M4 19h16M8 16l3-4 3 2 4-7','Real-time','Payment tracking'],['M3 21h18M5 21V10l7-5 7 5v11','Path to','Ownership'],['M12 2 2 7v10l10 5 10-5V7L12 2z','PDPA','Compliant'],['M2 12h20M12 2c3 3 3 17 0 20M12 2C9 5 9 19 12 22','Built for','East Africa'],['M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6','Free to use,','owner &amp; driver']];
   const mk=()=>items.map(([d,a,b])=>`<div class="trust-item"><svg viewBox="0 0 24 24" fill="none"><path d="${d}" stroke="#1DD882" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><b>${a}</b> ${b}</div>`).join('');
   document.getElementById('track').innerHTML=mk()+mk();
 
@@ -919,7 +919,7 @@
   const seg=document.getElementById('segType'),wkRange=document.getElementById('wkRange'),
         wkVal=document.getElementById('wkVal'),priceVal=document.getElementById('priceVal'),
         weeksOut=document.getElementById('weeksOut'),weeksSub=document.getElementById('weeksSub'),dateOut=document.getElementById('dateOut');
-  let price=2300000;
+  let price=2400000;
   function fmt(n){return n.toLocaleString('en-US')}
   function calc(){
     const wk=+wkRange.value;
@@ -937,7 +937,7 @@
     seg.querySelectorAll('button').forEach(x=>x.classList.remove('on'));
     b.classList.add('on');price=+b.dataset.price;
     // adjust slider sensible defaults per type
-    if(price>4000000){wkRange.min=120000;wkRange.max=320000;wkRange.value=175000;wkRange.step=5000;}
+    if(price>4000000){wkRange.min=140000;wkRange.max=350000;wkRange.value=200000;wkRange.step=5000;}
     else{wkRange.min=40000;wkRange.max=160000;wkRange.value=70000;wkRange.step=5000;}
     document.querySelectorAll('.calc-range-labels span')[0].textContent=fmt(+wkRange.min);
     document.querySelectorAll('.calc-range-labels span')[1].textContent=fmt(+wkRange.max);
