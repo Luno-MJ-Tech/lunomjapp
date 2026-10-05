@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["A4KA97KHQT.com.lunomj.ios"],
+        "components": [
+          { "/": "/app/*", "comment": "Email buttons: /app/add-vehicle (owner), /app/join (driver)" }
+        ]
+      }
+    ]
+  }
+}
