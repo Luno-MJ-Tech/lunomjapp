@@ -16,7 +16,9 @@ Key facts:
 
 ## Pages
 - [Home](https://lunomj.com/): product overview, how it works, our story, FAQ
+- [Founder: Dr. Ally Said](https://lunomj.com/dr-ally-said.html)
 - [Privacy Policy](https://lunomj.com/luno-privacy-policy.html)
+- [Terms of Use](https://lunomj.com/luno-terms.html)
 
 ## Contact
 - Email: hello@lunomj.com
