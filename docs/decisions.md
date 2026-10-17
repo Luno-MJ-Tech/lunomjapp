@@ -2,6 +2,16 @@
 
 Newest first. Each entry: what was decided, why, and what is permanent.
 
+## 2026-10-17 — Before publishing the redesign
+
+- Founder page: TikTok `https://www.tiktok.com/@drallysaid` added to the links and to Person `sameAs`
+  (founder page and homepage).
+- Founder page: "Health innovation — EMD Survival" section (EN + SW), described from the app itself.
+  Not linked publicly on purpose: its roster shows colleagues' real names and rotations.
+- Owner screenshots retaken after maturing the LOCAL demo fleet (TZS 18.14M collected vs 17.1M invested):
+  `owner-kiongozi` (Kiongozi note) and new `owner-profit` (net profit TZS 1,040,000). The old fleet-list
+  shot was dropped because it showed older demo numbers than the driver shot.
+
 ## 2026-10-17 — Homepage redesign and founder page (branch `redesign`, not live)
 
 - **Look:** ink `#08080A`, mint `#0ECF8A`, text `#F2F4F3`; Bricolage Grotesque (headlines) + Manrope (body),
