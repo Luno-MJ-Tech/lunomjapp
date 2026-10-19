@@ -15,6 +15,17 @@ Newest first. Each entry: what was decided, why, and what is permanent.
   LMT pages (`lmt.html`, `injini.html`) keep the LMT wordmark and "LUNO Mwanajando Technologies" as name (it is the
   company's studio), with `legalName` added. `index-v0.html` and the `new/` prototype were deleted (2026-10-19); nothing linked to them and they were not in the sitemap.
 
+## 2026-10-19 — Copy rule: plain words, no buzzwords, no boasts (permanent)
+
+- **No AI-sounding buzzwords.** True features stay, said in plain words. Examples: "offline-first" becomes "built to
+  work on weak or no internet" or "works without internet once opened"; "AI-ready" / "ready for the AI era" /
+  "AI-readiness" become "easy for search engines and AI assistants to read"; "autonomous" goes.
+- **No boasts:** no "first", "leading", "#1", "best", "mobile-first" or promises we cannot prove ("we'll pass yours").
+  Facts stay ("in the first 48 hours", "an owner must first close contracts").
+- Banned-word list (homepage entry of 2026-10-17) still applies on every page, `llms.txt` and structured data.
+- EMD Survival: "Works without internet once opened" stays on `lmt.html`. Its full offline mode ships with the
+  November roster (owner, 2026-10-19). Re-check the wording against the EMD code when that ships.
+
 ## 2026-10-19 — Offline claims must match the apps
 
 - Checked in code: Android (`PaymentRepository`, Room `needsSync`) records payments offline and syncs later.
