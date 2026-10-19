@@ -2,6 +2,16 @@
 
 Newest first. Each entry: what was decided, why, and what is permanent.
 
+## 2026-10-19 — Book waitlist runs on Substack (branch `substack-waitlist`)
+
+- Founder page waitlist (`#waitlist`) is Substack's official iframe embed
+  (`https://drroberttzholanga.substack.com/embed`), lazy-loaded, with a plain fallback link to `/subscribe`
+  (EN + SW). Our own email field, consent checkbox and submit-blocking script were removed: Substack shows its own
+  consent text and handles unsubscribe. No unofficial Substack API.
+- Substack is its own controller for these emails, not our processor, so the Privacy Policy covers it in
+  section 11 (Our Website), EN + SW, not section 5. That paragraph also says the embed may set Substack cookies.
+- Person `sameAs` (founder page and homepage) includes `https://drroberttzholanga.substack.com`.
+
 ## 2026-10-19 — Public brand name "LUNO Mwanajando" (branch `brand-full-name`)
 
 - **Permanent:** the public brand is **LUNO Mwanajando**; the legal name stays
@@ -78,9 +88,8 @@ Newest first. Each entry: what was decided, why, and what is permanent.
 - **Fleet photos:** section `#fleet` is in the page but `hidden` until real photos are in `assets/fleet/`.
 - **Founder page** `dr-ally-said.html` (permanent URL; it is in the sitemap and the Person `@id`
   `https://lunomj.com/dr-ally-said.html#person` is referenced by the Organization JSON-LD).
-- **Waitlist form** on the founder page has a placeholder `action` (`#NEWSLETTER-EMBED-PLACEHOLDER`);
-  a script blocks submits until it is replaced. When the newsletter provider is chosen, add it to the
-  Privacy Policy (section 5, processors) before going live.
+- **Waitlist form** on the founder page had a placeholder `action`; replaced by the Substack embed on 2026-10-19
+  (see that entry).
 - **Footers:** every public page links Privacy Policy, Terms and Delete account (`luno-privacy-policy.html#delete-account`).
 - **Lighthouse (mobile, local server, 2026-10-17):** both pages 100 / 100 / 100 / 100
   (performance / accessibility / best practices / SEO).
