@@ -27,6 +27,17 @@ Newest first. Each entry: what was decided, why, and what is permanent.
   November roster (owner, 2026-10-19). Re-check the wording against the EMD code when that ships.
 - EMD Survival is never linked from the site or `llms.txt` (its roster shows colleagues' real names and
   rotations). On `lmt.html` it is listed as "Private to Muhimbili EMD staff".
+## 2026-10-19 — Homepage ledger demo "One record, two sides" (branch `ledger-demo`)
+
+- Section `#demo` right after the hero. Plain HTML/CSS/JS inside `index.html` (+14 KB, 3.8 KB gzipped), no requests:
+  one state object, read by the owner view and the driver view, so both always show the same numbers.
+- Example only, and labelled so: invented names (owner Zawadi Kimaro, driver Baraka Mollel), plate `MC 108 DEM`
+  (demo plates end `DEM`), TZS 4,200,000 at TZS 70,000 a week, 60 weeks, starting at week 38. Freedom day is counted
+  from today. The certificate carries "Example only. Not a real certificate." / "Mfano tu. Si cheti halisi."
+- Field names and certificate wording come from the apps (Android `DashboardScreen.kt`, iOS `ReportTemplates`
+  `cert_*` strings), so the demo and the apps must change together.
+- i18n keys use the `dm_` prefix (`demo_note` already belongs to the screenshots section). Tabs: one `tabset()`
+  per tablist; arrows, Home and End move between tabs.
 
 ## 2026-10-19 — Offline claims must match the apps
 
