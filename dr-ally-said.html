@@ -74,7 +74,8 @@
       "https://www.facebook.com/drallysaidtz",
       "https://www.upwork.com/freelancers/drallysaidtz",
       "https://github.com/DrAlly05",
-      "https://www.tiktok.com/@drallysaid"
+      "https://www.tiktok.com/@drallysaid",
+      "https://drroberttzholanga.substack.com"
     ]
   }
 }
@@ -128,15 +129,9 @@
   @media(min-width:720px){.waitlist{padding:34px}}
   .waitlist h3{font-size:clamp(22px,3vw,28px)}
   .waitlist .sub{color:var(--mute);margin-top:6px}
-  .form-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-  .form-row label{flex-basis:100%;font-weight:600;font-size:15px}
-  .form-row input[type=email]{flex:1 1 240px;min-height:50px;padding:12px 16px;border-radius:14px;border:1px solid var(--line-2);background:#0C0D0F;color:var(--text);font:inherit}
-  .form-row input[type=email]:focus{border-color:var(--mint);outline:none;box-shadow:0 0 0 3px rgba(14,207,138,.25)}
-  .form-row button{min-height:50px;padding:12px 24px;border-radius:100px;border:0;background:var(--mint);color:var(--ink);font:inherit;font-weight:700;cursor:pointer}
-  .form-row button:hover{background:#3BE0A4}
-  .consent{display:flex;gap:10px;align-items:flex-start;margin-top:16px;font-size:14.5px;color:var(--mute)}
-  .consent input{flex:none;width:20px;height:20px;margin-top:3px;accent-color:var(--mint)}
-  .form-msg{margin-top:14px;font-size:14.5px;color:var(--amber);min-height:1.2em}
+  .sub-embed{margin-top:22px;max-width:520px;background:var(--card-2);border:1px solid var(--line-2);border-radius:20px;padding:10px}
+  .sub-embed iframe{display:block;width:100%;height:320px;border:0;border-radius:14px;background:#fff}
+  .sub-alt{margin-top:14px;font-size:15px;color:var(--mute)}
   footer{border-top:1px solid var(--line);padding:40px 0 34px;color:var(--mute);font-size:14.5px}
   footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:16px}
   footer nav a{color:var(--text);text-decoration:none}
@@ -205,23 +200,15 @@
         <article class="book"><h3>The Most Democratic Thing</h3><p>Philosophy. Provisional title.</p><span class="status">In progress</span></article>
       </div>
 
-      <div class="waitlist">
+      <div class="waitlist" id="waitlist">
         <h3>Be the first to know when they are published</h3>
         <p class="sub" lang="sw">Kuwa wa kwanza kujua vitakapochapishwa.</p>
-        <!-- WAITLIST FORM: PLACEHOLDER. Replace action (and method/field names if needed) with the
-             newsletter provider's embed code before publishing. Until then the script below blocks
-             submits so no email goes anywhere. Add the newsletter provider to the Privacy Policy too. -->
-        <form id="waitlist" action="#NEWSLETTER-EMBED-PLACEHOLDER" method="post" novalidate>
-          <div class="form-row">
-            <label for="wl-email">Email <span lang="sw">/ Barua pepe</span></label>
-            <input type="email" id="wl-email" name="email" autocomplete="email" inputmode="email" required placeholder="you@example.com">
-            <button type="submit">Join the waitlist <span lang="sw">/ Jiunge</span></button>
-          </div>
-          <label class="consent"><input type="checkbox" name="consent" required>
-            <span>I agree to receive emails about these books and can unsubscribe at any time. <span lang="sw">Nakubali kupokea barua pepe kuhusu vitabu hivi na ninaweza kujiondoa wakati wowote.</span> See the <a href="luno-privacy-policy.html">Privacy Policy</a>.</span>
-          </label>
-          <p class="form-msg" id="wl-msg" role="status"></p>
-        </form>
+        <!-- Substack's official embed. Substack holds the emails and handles consent and unsubscribe
+             (see the Privacy Policy). -->
+        <div class="sub-embed">
+          <iframe src="https://drroberttzholanga.substack.com/embed" title="Subscribe to Dr. Robert T. Zholanga on Substack" width="480" height="320" loading="lazy" scrolling="no"></iframe>
+        </div>
+        <p class="sub-alt"><a href="https://drroberttzholanga.substack.com/subscribe">Or subscribe on Substack</a> <span aria-hidden="true">/</span> <a href="https://drroberttzholanga.substack.com/subscribe" lang="sw">Au jiunge kupitia Substack</a></p>
       </div>
     </div>
   </section>
@@ -266,16 +253,5 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var f=document.getElementById('waitlist'),msg=document.getElementById('wl-msg');
-  f.addEventListener('submit',function(e){
-    var email=f.elements.email,consent=f.elements.consent;
-    if(!email.checkValidity()){e.preventDefault();msg.textContent='Please enter a valid email. / Tafadhali weka barua pepe sahihi.';email.focus();return}
-    if(!consent.checked){e.preventDefault();msg.textContent='Please tick the consent box. / Tafadhali weka alama ya ridhaa.';consent.focus();return}
-    if(f.getAttribute('action').indexOf('PLACEHOLDER')!==-1){e.preventDefault();msg.textContent='The waitlist opens soon. / Orodha ya kusubiri itafunguliwa hivi karibuni.'}
-  });
-})();
-</script>
 </body>
 </html>
