@@ -1,6 +1,6 @@
 # LUNO Mwanajando
 
-> LUNO is a digital ledger for bodaboda (motorcycle) and bajaj (three-wheeler) hire-purchase in Tanzania. It records every payment between a driver and a vehicle owner, shows live ownership progress and a projected "freedom date," and replaces paper notebooks and disputed receipts with digital proof. LUNO is the ledger, not the lender: it does not lend money or set terms — owners and drivers agree on their own hire-purchase deal, and LUNO keeps one trusted, shared record for both sides.
+> LUNO Mwanajando is a digital ledger for bodaboda (motorcycle) and bajaj (three-wheeler) hire-purchase in Tanzania. It records every payment between a driver and a vehicle owner, shows live ownership progress and a projected "freedom date," and replaces paper notebooks and disputed receipts with digital proof. LUNO is the ledger, not the lender: it does not lend money or set terms — owners and drivers agree on their own hire-purchase deal, and LUNO keeps one trusted, shared record for both sides.
 
 Key facts:
 - Market: Tanzania's bodaboda and bajaj hire-purchase economy (East Africa)

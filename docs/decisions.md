@@ -10,6 +10,10 @@ Newest first. Each entry: what was decided, why, and what is permanent.
   JSON-LD names, the first mention in the hero). After that, body text says "LUNO". The "Luno" in the company story is a person; leave it.
 - Logo lockup on index, founder, terms and privacy pages: icon + "LUNO" (display, 800) with "Mwanajando" stacked
   below in smaller, lighter Manrope. Markup: `.logo > .wm > .wm-main + .wm-sub`.
+- Follow-up (same branch): article pages (makala, mkataba, daftari) use "Article title | LUNO Mwanajando" for
+  `<title>`/`og:title` and the same lockup; their JSON-LD Organization points to `https://lunomj.com/#org`.
+  LMT pages (`lmt.html`, `injini.html`) keep the LMT wordmark and "LUNO Mwanajando Technologies" as name (it is the
+  company's studio), with `legalName` added. `index-v0.html` and `new/index.html` are old prototypes, not rebranded.
 
 ## 2026-10-17 — Before publishing the redesign
 
