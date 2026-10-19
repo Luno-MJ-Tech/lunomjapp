@@ -383,6 +383,73 @@
   .socials a:hover{border-color:var(--mint);color:var(--mint)}
   .socials svg{width:19px;height:19px;fill:currentColor}
   .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line);font-size:13.5px;color:var(--mute-2)}
+
+  /* LEDGER DEMO (one shared state, two views) */
+  .demo{padding-top:24px}
+  @media(min-width:900px){.demo{padding-top:40px}}
+  .demo-grid{display:grid;gap:36px;align-items:start}
+  @media(min-width:960px){.demo-grid{grid-template-columns:.85fr 1.15fr;gap:64px}}
+  .dm{min-width:0}
+  .dm-top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+  .dm-switch{margin-top:0}
+  .dm-switch button{padding:10px 16px;font-size:15px}
+  .dm-tag{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(242,181,58,.45);border-radius:100px;padding:5px 12px}
+  .dm-note{font-size:14px;color:var(--mute-2);margin-top:12px}
+  .dm-screen{margin-top:16px;border-radius:28px;background:#0B0C0D;border:1px solid var(--line-2);padding:22px 18px;box-shadow:0 30px 70px rgba(0,0,0,.45)}
+  @media(min-width:520px){.dm-screen{padding:26px 24px}}
+  .dm-screen [role="tabpanel"]:focus-visible{outline-offset:8px}
+  .dm-eb{font-size:11.5px;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--amber)}
+  .dm-eb.mint{color:var(--mint)}
+  .dm-who{font-size:14px;color:var(--mute-2);margin-bottom:6px}
+  .dm-plate{font-family:var(--display);font-weight:800;font-size:28px;color:var(--mint);line-height:1.1;margin-top:4px}
+  .dm-sub{font-size:14px;color:var(--mute);margin-top:4px}
+  .dm-bar{height:12px;border-radius:12px;background:var(--line);margin:20px 0 8px;overflow:hidden}
+  .dm-bar i{display:block;height:100%;width:var(--dp);border-radius:12px;background:linear-gradient(90deg,var(--mint-d),var(--mint));transition:width .5s var(--ease)}
+  .dm-row{display:flex;justify-content:space-between;font-size:14px;color:var(--mute);font-weight:600}
+  .dm-row b{color:var(--mint)}
+  .dm-list{margin-top:16px;border-radius:18px;background:var(--card);overflow:hidden}
+  .dm-list div{display:flex;justify-content:space-between;gap:12px;padding:13px 16px;border-top:1px solid var(--line);font-size:15px}
+  .dm-list div:first-child{border-top:0}
+  .dm-list dt{color:var(--mute)}
+  .dm-list dd{font-weight:700;text-align:right}
+  .dm-list .amber dd{color:var(--amber)}
+  .dm-list .mint dd{color:var(--mint)}
+  .dm-rec{width:100%;margin-top:18px}
+  .dm-done{margin-top:18px;text-align:center;font-weight:700;color:var(--mint)}
+  .dm-head{font-family:var(--display);font-size:22px;line-height:1.3;font-weight:700}
+  .dm-head .m{color:var(--mint)}
+  .dm-chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+  .dm-chips span{font-size:13px;font-weight:600;padding:5px 11px;border-radius:100px;background:var(--card-2);color:var(--mute)}
+  .dm-chips .mint{background:rgba(14,207,138,.12);color:var(--mint)}
+  .dm-chips .amber{background:rgba(242,181,58,.12);color:var(--amber)}
+  .dm-ring{width:170px;height:170px;margin:22px auto 18px;border-radius:50%;display:grid;place-items:center;text-align:center;background:radial-gradient(closest-side,#0B0C0D 78%,transparent 79%),conic-gradient(var(--mint) var(--dp),var(--line) 0)}
+  .dm-ring b{display:block;font-family:var(--display);font-size:38px;line-height:1}
+  .dm-ring small{display:block;font-size:12px;font-weight:600;color:var(--mint);margin-top:4px}
+  .dm-free{border-radius:18px;border:1px solid rgba(14,207,138,.3);background:rgba(14,207,138,.05);padding:16px;text-align:center}
+  .dm-free p{margin-top:6px;font-weight:700}
+  .dm-free .amber{color:var(--amber);font-size:14px}
+  .dm-two{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}
+  .dm-two div{border-radius:16px;padding:12px 14px;background:rgba(14,207,138,.07);border:1px solid rgba(14,207,138,.2)}
+  .dm-two .amber{background:rgba(242,181,58,.07);border-color:rgba(242,181,58,.25)}
+  .dm-two dt{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+  .dm-two dd{font-family:var(--display);font-weight:800;font-size:17px;color:var(--mint);margin-top:4px;overflow-wrap:anywhere}
+  .dm-two .amber dd{color:var(--amber)}
+  .dm-cert{margin-top:18px;border-radius:24px;padding:26px 22px;text-align:center;color:#141515;background:linear-gradient(160deg,#FBFCF8,#EEF5EF);border:1px solid #CFE3D6;box-shadow:0 0 0 6px rgba(14,207,138,.14);animation:dmIn .8s var(--ease) both}
+  @keyframes dmIn{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+  .dm-cert .brand{font-size:11.5px;font-weight:800;letter-spacing:.24em;color:var(--mint-d)}
+  .dm-cert h3{font-size:22px;margin-top:8px}
+  .dm-cert h3:focus{outline:none}
+  .dm-cert h3:focus-visible{outline:2.5px solid var(--mint-d)}
+  .dm-cert .nm{font-family:var(--display);font-weight:800;font-size:26px;margin:6px 0;color:#141515}
+  .dm-cert p{font-size:14.5px;color:#3B403D}
+  .dm-cert dl{display:grid;gap:6px;margin:16px auto 0;max-width:340px;text-align:left;font-size:14px}
+  .dm-cert dl div{display:flex;justify-content:space-between;gap:12px;border-top:1px solid #D7E3DA;padding-top:6px}
+  .dm-cert dt{color:#5D645F}
+  .dm-cert dd{font-weight:700;text-align:right}
+  .dm-cert .stamp{display:inline-block;margin-top:16px;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#9A5B00;border:1.5px dashed #C98A1E;border-radius:8px;padding:5px 10px}
+  .dm-reset{margin-top:14px;background:none;border:0;padding:8px 2px;min-height:44px;color:var(--mute);font-size:14.5px;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+  .dm-reset:hover{color:var(--text)}
+  @media(prefers-reduced-motion:reduce){.dm-bar i{transition:none}}
 </style>
 </head>
 
@@ -433,6 +500,76 @@
       <div class="phone phone-front"><img src="assets/screens/driver-home.webp" srcset="assets/screens/driver-home-400.webp 400w, assets/screens/driver-home.webp 600w" sizes="(min-width: 720px) 280px, 76vw" width="600" height="1235" fetchpriority="high" alt="LUNO driver home screen in Kiswahili: 67% toward ownership of MC 101 DEM, with the freedom date 13 Feb 2027 and the amount left to pay." data-i18n-alt="alt_hero1"></div>
       <div class="phone phone-back" aria-hidden="true"><img src="assets/screens/owner-verify.webp" srcset="assets/screens/owner-verify-400.webp 400w, assets/screens/owner-verify.webp 600w" sizes="(min-width: 720px) 280px, 76vw" width="600" height="1269" loading="lazy" alt=""></div>
       <div class="tag tag-2"><b data-i18n="tag2_k">Owner</b><span data-i18n="tag2_v">Approves the same payment</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 2b. LEDGER DEMO: "One record, two sides". Runs only in the browser; nothing is sent. -->
+<section class="demo" id="demo" aria-labelledby="demo-h">
+  <div class="wrap demo-grid">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="dm_eyebrow">Try it</span>
+      <h2 id="demo-h" data-i18n="dm_h2">One record, two sides.</h2>
+      <p class="lead" data-i18n="dm_lead">Record a payment as the owner, then switch to the driver. Both see the same numbers, straight away.</p>
+    </div>
+    <div class="dm reveal">
+      <div class="dm-top">
+        <div class="switch dm-switch" role="tablist" id="dmTabs" aria-label="Choose a side">
+          <button type="button" role="tab" id="dt-owner" aria-controls="dp-owner" aria-selected="true" data-i18n="dm_tab_o">I'm the owner</button>
+          <button type="button" role="tab" id="dt-driver" aria-controls="dp-driver" aria-selected="false" tabindex="-1" data-i18n="dm_tab_d">I'm the driver</button>
+        </div>
+        <span class="dm-tag" data-i18n="dm_tag">Example</span>
+      </div>
+      <p class="dm-note" data-i18n="dm_note">Invented names and numbers. Nothing you do here leaves your browser.</p>
+      <div class="dm-screen">
+        <div role="tabpanel" id="dp-owner" aria-labelledby="dt-owner" tabindex="0">
+          <p class="dm-who">Zawadi Kimaro &middot; <span data-i18n="dm_owner">Owner</span></p>
+          <p class="dm-eb" data-i18n="dm_contract">Contract</p>
+          <p class="dm-plate">MC 108 DEM</p>
+          <p class="dm-sub" data-i18n="dm_sub">Bodaboda &middot; TZS 4,200,000 &middot; 60 weeks</p>
+          <div class="dm-bar" aria-hidden="true"><i></i></div>
+          <p class="dm-row"><span data-k="weeks">Week 38 of 60</span><b data-k="pct">63%</b></p>
+          <dl class="dm-list">
+            <div><dt data-i18n="dm_driver">Driver</dt><dd>Baraka Mollel</dd></div>
+            <div><dt data-i18n="dm_rate">Weekly rate</dt><dd>TZS 70,000</dd></div>
+            <div class="mint"><dt data-i18n="dm_paid">Collected</dt><dd data-k="paid">TZS 2,660,000</dd></div>
+            <div class="amber"><dt data-i18n="dm_left">To go</dt><dd data-k="left">TZS 1,540,000</dd></div>
+            <div><dt data-i18n="dm_day">Freedom day</dt><dd data-k="date"></dd></div>
+          </dl>
+          <button type="button" class="btn btn-mint dm-rec" id="dmRec" data-i18n="dm_rec">Record this week's payment</button>
+          <p class="dm-done" id="dmDone" hidden data-i18n="dm_done">Paid in full. The certificate is ready.</p>
+        </div>
+        <div role="tabpanel" id="dp-driver" aria-labelledby="dt-driver" tabindex="0" hidden>
+          <p class="dm-who">Baraka Mollel &middot; <span data-i18n="dm_driver2">Driver</span></p>
+          <p class="dm-head" data-k="head">You're <b class="m">63%</b> of the way to owning <b>MC 108 DEM</b></p>
+          <p class="dm-chips"><span class="mint">MC 108 DEM</span><span data-k="weeks">Week 38 of 60</span><span class="amber" data-k="wleft">22 remaining</span></p>
+          <div class="dm-ring" aria-hidden="true"><div><b data-k="pct">63%</b><small data-k="paid">TZS 2,660,000</small></div></div>
+          <div class="dm-free">
+            <span class="dm-eb mint" data-i18n="dm_day2">Freedom day</span>
+            <p data-k="free"></p>
+            <p class="amber" data-k="tofull"></p>
+          </div>
+          <dl class="dm-two">
+            <div><dt data-i18n="dm_built">You've built</dt><dd data-k="paid">TZS 2,660,000</dd></div>
+            <div class="amber"><dt data-i18n="dm_togo">To go</dt><dd data-k="left">TZS 1,540,000</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="dm-cert" id="dmCert" hidden>
+        <p class="brand">LUNO MWANAJANDO</p>
+        <h3 id="dmCertH" tabindex="-1" data-i18n="dm_c_title">Contract Completion Certificate</h3>
+        <p data-i18n="dm_c_cert">This certifies that</p>
+        <p class="nm">Baraka Mollel</p>
+        <p data-i18n="dm_c_body">has paid in full, and on schedule, a hire-purchase contract for the vehicle below, and now owns it outright. Every payment in this record was verified by the owner.</p>
+        <dl>
+          <div><dt data-i18n="dm_c_veh">Vehicle</dt><dd>Bodaboda &middot; MC 108 DEM</dd></div>
+          <div><dt data-i18n="dm_c_own">Owner</dt><dd>Zawadi Kimaro</dd></div>
+          <div><dt data-i18n="dm_c_tot">Total paid</dt><dd>TZS 4,200,000</dd></div>
+        </dl>
+        <span class="stamp" data-i18n="dm_c_stamp">Example only. Not a real certificate.</span>
+      </div>
+      <button type="button" class="dm-reset" id="dmReset" data-i18n="dm_reset">Start again</button>
+      <p class="sr-only" id="dmLive" aria-live="polite"></p>
     </div>
   </div>
 </section>
@@ -719,13 +856,17 @@
     document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
   }else document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')});
 
-  // owners / drivers switch (WAI-ARIA tabs)
-  var tabs=[].slice.call(document.querySelectorAll('[role="tab"]'));
-  function select(tab,focus){tabs.forEach(function(t){var on=t===tab;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on});if(focus)tab.focus()}
-  tabs.forEach(function(t,i){
-    t.addEventListener('click',function(){select(t)});
-    t.addEventListener('keydown',function(e){if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();select(tabs[(i+(e.key==='ArrowRight'?1:tabs.length-1))%tabs.length],true)}});
-  });
+  // WAI-ARIA tabs, one set per tablist: owners / drivers switch and the ledger demo
+  function tabset(scope){
+    var tabs=[].slice.call(document.querySelectorAll(scope+' [role="tab"]'));
+    function select(tab,focus){tabs.forEach(function(t){var on=t===tab;t.setAttribute('aria-selected',on);t.tabIndex=on?0:-1;document.getElementById(t.getAttribute('aria-controls')).hidden=!on});if(focus)tab.focus()}
+    tabs.forEach(function(t,i){
+      t.addEventListener('click',function(){select(t)});
+      t.addEventListener('keydown',function(e){var k=e.key,j=k==='ArrowRight'?i+1:k==='ArrowLeft'?i-1+tabs.length:k==='Home'?0:k==='End'?tabs.length-1:-1;if(j>=0){e.preventDefault();select(tabs[j%tabs.length],true)}});
+    });
+    return select;
+  }
+  var select=tabset('#sides');tabset('#demo');
   document.querySelectorAll('[data-side="owners"]').forEach(function(a){a.addEventListener('click',function(){select(document.getElementById('tab-owners'))})});
 
   // language toggle (EN <-> SW): English lives in the HTML, Kiswahili here
@@ -734,6 +875,12 @@
     hero_eyebrow:'Kwa wamiliki na madereva',
     hero_h1:'Kila malipo yanahesabika. <span class="m">Kila hatua ya umiliki inaonekana.</span>',
     hero_sub:'Kwa LUNO Mwanajando, mmiliki na dereva wanaona mkataba uleule, malipo yaleyale na siku ileile ya uhuru. Hakuna daftari, hakuna ubishi juu ya kilicholipwa.',
+    dm_eyebrow:'Jaribu',dm_h2:'Rekodi moja, pande mbili.',dm_lead:'Rekodi malipo kama mmiliki, kisha badili uwe dereva. Wote wanaona namba zilezile, papo hapo.',
+    dm_tab_o:'Mimi ni Mmiliki',dm_tab_d:'Mimi ni Dereva',dm_tag:'Mfano',dm_note:'Majina na namba ni za kubuni. Hakuna unachofanya hapa kinachotoka kwenye kivinjari chako.',
+    dm_owner:'Mmiliki',dm_contract:'Mkataba',dm_sub:'Bodaboda &middot; TZS 4,200,000 &middot; wiki 60',dm_driver:'Dereva',dm_driver2:'Dereva',dm_rate:'Kiwango cha wiki',dm_paid:'Imekusanywa',dm_left:'Imebaki',dm_day:'Siku ya uhuru',
+    dm_rec:'Rekodi malipo ya wiki hii',dm_done:'Imelipwa kikamilifu. Cheti kiko tayari.',dm_day2:'Siku ya uhuru',dm_built:'Umejenga',dm_togo:'Imebaki',
+    dm_c_title:'Cheti cha Kukamilisha Mkataba',dm_c_cert:'Hii inathibitisha kwamba',dm_c_body:'amelipa kikamilifu, kwa wakati uliopangwa, mkataba wa kukodi hadi kumiliki chombo kilichoelezwa hapa chini, na sasa ni mmiliki wake kamili. Kila malipo katika kumbukumbu hii yalithibitishwa na mmiliki.',
+    dm_c_veh:'Chombo',dm_c_own:'Mmiliki',dm_c_tot:'Jumla iliyolipwa',dm_c_stamp:'Mfano tu. Si cheti halisi.',dm_reset:'Anza upya',
     hero_note:'Pakua bure kwenye Android na iPhone. Kiswahili na Kiingereza. Android 8.0+ na iOS 16+.',
     tag1_k:'Dereva',tag1_v:'Siku ya uhuru, papo hapo',tag2_k:'Mmiliki',tag2_v:'Anathibitisha malipo yaleyale',
     alt_hero1:'Skrini ya nyumbani ya dereva kwenye LUNO: asilimia 67 kuelekea kumiliki MC 101 DEM, siku ya uhuru 13 Feb 2027 na kiasi kilichobaki.',
@@ -800,7 +947,7 @@
     document.documentElement.lang=l;
     langLabel.textContent=l==='en'?'Kiswahili':'English';
     try{localStorage.setItem('luno-lang',l)}catch(e){}
-    calc();
+    calc();demo();
   }
   document.getElementById('langBtn').addEventListener('click',function(){applyLang(lang==='en'?'sw':'en')});
 
@@ -821,9 +968,36 @@
   }
   price.addEventListener('input',calc);weekly.addEventListener('input',calc);
 
+  // ledger demo: one state, read by both the owner and the driver view
+  var DM={start:38,paid:38,total:60,rate:70000},dmToday=new Date(),
+    dmT={en:{weeks:'Week {w} of {t}',wleft:'{n} remaining',head:'You\'re <b class="m">{p}%</b> of the way to owning <b>MC 108 DEM</b>',done:'The bike is yours!',free:'MC 108 DEM is fully yours &middot; {d}',tofull:'{a} to 100%',live:'Payment recorded. Week {w} of {t}. To go {a}. Freedom day {d}.',fin:'Paid in full. The ownership certificate is ready.',reset:'Example reset to week 38 of 60.',tabs:'Choose a side'},
+      sw:{weeks:'Wiki {w} za {t}',wleft:'Zimebaki {n}',head:'Uko <b class="m">{p}%</b> kuelekea kumiliki <b>MC 108 DEM</b>',done:'Pikipiki ni yako!',free:'MC 108 DEM ni yako &middot; {d}',tofull:'{a} hadi 100%',live:'Malipo yamerekodiwa. Wiki {w} za {t}. Imebaki {a}. Siku ya uhuru {d}.',fin:'Imelipwa kikamilifu. Cheti cha umiliki kiko tayari.',reset:'Mfano umeanza upya: wiki 38 za 60.',tabs:'Chagua upande'}},
+    dmRoot=document.getElementById('demo'),dmRec=document.getElementById('dmRec'),dmLive=document.getElementById('dmLive');
+  function fmt(s,o){return s.replace(/\{(\w)\}/g,function(_,k){return o[k]})}
+  function dmDate(n){var d=new Date(dmToday);d.setDate(d.getDate()+n*7);try{return d.toLocaleDateString(lang==='sw'?'sw-TZ':'en-GB',{day:'numeric',month:'short',year:'numeric'})}catch(e){return d.toDateString()}}
+  function dmSet(k,v){dmRoot.querySelectorAll('[data-k="'+k+'"]').forEach(function(el){el.innerHTML=v})}
+  function demo(){
+    var t=dmT[lang],w=DM.paid,n=DM.total-w,p=Math.floor(w*100/DM.total),done=!n,
+      o={w:w,t:DM.total,n:n,p:p,a:money(n*DM.rate),d:dmDate(n)};
+    dmSet('weeks',fmt(t.weeks,o));dmSet('wleft',fmt(t.wleft,o));dmSet('pct',p+'%');
+    dmSet('paid',money(w*DM.rate));dmSet('left',money(n*DM.rate));dmSet('date',o.d);
+    dmSet('head',done?t.done:fmt(t.head,o));dmSet('free',fmt(t.free,o));dmSet('tofull',done?'':fmt(t.tofull,o));
+    dmRoot.style.setProperty('--dp',p+'%');
+    dmRec.hidden=done;document.getElementById('dmDone').hidden=!done;document.getElementById('dmCert').hidden=!done;
+    document.getElementById('dmTabs').setAttribute('aria-label',t.tabs);
+    return o;
+  }
+  dmRec.addEventListener('click',function(){
+    if(DM.paid>=DM.total)return;
+    DM.paid++;var o=demo(),t=dmT[lang];
+    if(DM.paid===DM.total){dmLive.textContent=t.fin;document.getElementById('dmCertH').focus()}
+    else dmLive.textContent=fmt(t.live,o);
+  });
+  document.getElementById('dmReset').addEventListener('click',function(){DM.paid=DM.start;demo();dmLive.textContent=dmT[lang].reset});
+
   var start='en';
   try{start=new URLSearchParams(location.search).get('lang')||localStorage.getItem('luno-lang')||'en'}catch(e){}
-  if(start==='sw')applyLang('sw');else calc();
+  if(start==='sw')applyLang('sw');else{calc();demo()}
 })();
 </script>
 </body>
