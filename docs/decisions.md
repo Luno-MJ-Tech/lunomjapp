@@ -13,7 +13,15 @@ Newest first. Each entry: what was decided, why, and what is permanent.
 - Follow-up (same branch): article pages (makala, mkataba, daftari) use "Article title | LUNO Mwanajando" for
   `<title>`/`og:title` and the same lockup; their JSON-LD Organization points to `https://lunomj.com/#org`.
   LMT pages (`lmt.html`, `injini.html`) keep the LMT wordmark and "LUNO Mwanajando Technologies" as name (it is the
-  company's studio), with `legalName` added. `index-v0.html` and `new/index.html` are old prototypes, not rebranded.
+  company's studio), with `legalName` added. `index-v0.html` and the `new/` prototype were deleted (2026-10-19); nothing linked to them and they were not in the sitemap.
+
+## 2026-10-19 — Offline claims must match the apps
+
+- Checked in code: Android (`PaymentRepository`, Room `needsSync`) records payments offline and syncs later.
+  iOS has no offline queue (`LunoOwner/Domain/PaymentCap.swift`); it shows cached records offline but needs a
+  connection to record a payment. Public copy must say "Android" when it promises offline recording.
+- `llms.txt` updated accordingly. Still to fix: homepage FAQ q2/a2 (+ FAQPage JSON-LD), Terms §"availability",
+  Privacy "offline use" line, which say offline recording without naming the platform.
 
 ## 2026-10-17 — Before publishing the redesign
 
