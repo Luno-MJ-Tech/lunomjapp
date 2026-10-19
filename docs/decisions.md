@@ -24,8 +24,8 @@ Newest first. Each entry: what was decided, why, and what is permanent.
   and the Privacy "offline use" line now say the same (branch `offline-claim-truth`). Sign-out clears phone data
   on both apps (iOS `LocalCache.clearAll()`, Android `clearAllTables()`).
 - **1.2.1 item: iPhone offline payment queue** (match Android: save locally, mark for sync, retry). When it ships
-  on iPhone, restore the simple wording "works without internet" in the FAQ, FAQPage JSON-LD, Terms, Privacy
-  and `llms.txt`.
+  on iPhone, restore the simple wording "works without internet" in the FAQ, FAQPage JSON-LD, the homepage card `o6`,
+  Terms, Privacy and `llms.txt`. Terms and Privacy "Last updated" moved to 19 October 2026 for this change.
 - LMT JSON-LD description: "offline-first" replaced with "with offline features where a project needs them".
 
 ## 2026-10-17 — Before publishing the redesign
