@@ -25,6 +25,8 @@ Newest first. Each entry: what was decided, why, and what is permanent.
 - Banned-word list (homepage entry of 2026-10-17) still applies on every page, `llms.txt` and structured data.
 - EMD Survival: "Works without internet once opened" stays on `lmt.html`. Its full offline mode ships with the
   November roster (owner, 2026-10-19). Re-check the wording against the EMD code when that ships.
+- EMD Survival is never linked from the site or `llms.txt` (its roster shows colleagues' real names and
+  rotations). On `lmt.html` it is listed as "Private to Muhimbili EMD staff".
 
 ## 2026-10-19 — Offline claims must match the apps
 
