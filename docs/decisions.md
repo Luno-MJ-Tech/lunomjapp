@@ -2,6 +2,15 @@
 
 Newest first. Each entry: what was decided, why, and what is permanent.
 
+## 2026-10-19 — Public brand name "LUNO Mwanajando" (branch `brand-full-name`)
+
+- **Permanent:** the public brand is **LUNO Mwanajando**; the legal name stays
+  "LUNO Mwanajando Technologies Co. Limited". "LUNO" alone is the short form (JSON-LD `alternateName`).
+- Rule: use the full name where a search engine or first-time visitor meets the brand first (titles, meta/OG/Twitter,
+  JSON-LD names, the first mention in the hero). After that, body text says "LUNO". The "Luno" in the company story is a person; leave it.
+- Logo lockup on index, founder, terms and privacy pages: icon + "LUNO" (display, 800) with "Mwanajando" stacked
+  below in smaller, lighter Manrope. Markup: `.logo > .wm > .wm-main + .wm-sub`.
+
 ## 2026-10-17 — Before publishing the redesign
 
 - Founder page: TikTok `https://www.tiktok.com/@drallysaid` added to the links and to Person `sameAs`
