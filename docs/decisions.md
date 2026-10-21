@@ -2,6 +2,14 @@
 
 Newest first. Each entry: what was decided, why, and what is permanent.
 
+## 2026-10-21 — Founder X profile (branch `founder-x-link`)
+
+- Personal X `https://x.com/drallysaidtz` added after LinkedIn in the founder page hero links (aria-label
+  "Dr. Ally Said on X") and in the homepage founder pills; added to Person `sameAs` on both pages.
+  Founder page also gets `twitter:creator` `@drallysaidtz`.
+- **Two X accounts, never mixed:** `@lunomwanajando` is the company (Organization `sameAs`, LUNO footer
+  socials, `twitter:site`). `@drallysaidtz` is the person (Person `sameAs`, founder links, `twitter:creator`).
+
 ## 2026-10-19 — Book waitlist runs on Substack (branch `substack-waitlist`)
 
 - Founder page waitlist (`#waitlist`) is Substack's official iframe embed
